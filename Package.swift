@@ -14,11 +14,13 @@ let package = Package(
   targets: [
     .target(
       name: "SwiftWhen",
-      dependencies: []
+      dependencies: [],
+      path: "Sources"
     ),
     .testTarget(
       name: "SwiftWhenTests",
-      dependencies: ["SwiftWhen"]
+      dependencies: ["SwiftWhen"],
+      path: "Tests"
     ),
   ]
 )
